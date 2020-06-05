@@ -1,0 +1,203 @@
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background: #f5f7fa;
+    height: 1319px;
+}
+.wrapper{
+    background: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+}
+.sidebar{
+    background: #1e2939;
+    width: 370px;
+    height: 1319px;
+}
+.foto{
+    width: 370px;
+    height: 354px;
+    padding-top: 40px;
+   
+}
+.name_tel_mail{
+    color: white;
+    width: 0 auto;
+    height: 0 auto;
+    margin-right: 10px;
+    font-weight:700 ;
+}
+.ul_asidebar{
+    margin:  0;
+    padding: 0;
+    width: 300px;
+}
+.all_content{
+    padding-left: 90px;
+    padding-top: 54px;
+    padding-right: 90px;
+    width: 1200px;
+
+}
+.div_contacts{
+    color: #ffffff;
+    padding-top: 57px;
+    padding-left: 40px;
+    padding-right: 140px;
+    padding-bottom: 20px;
+}
+.contacts{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.tel_mail{
+    color: #2dd1d6;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+.mail_tel{
+    padding-left: 8px;
+}
+.div_tech_skills{
+    padding-top: 54x;
+    padding-left: 40px;
+    padding-right: 209px;
+    padding-bottom: 20px;
+}
+.tech_skills{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+}
+.skills_text{
+    color:#a7acb2;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.skills{
+    color: #ff6b08;
+    margin-left: 20px;
+}
+.div_soft_skills{
+    padding-top: 52x;
+    padding-left: 41px;
+    padding-right: 217px;
+}
+.soft{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+.name_job{
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.name{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+.text_afte_name{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8f8f8f;
+    width: 413px;
+    height: 0 auto;S
+}
+.name_projects{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.li_all_content{
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px; 
+}
+.a_projects{
+    color: #a1a1a1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.ol_projects{
+    padding-left: 15px;
+}
+.work{
+    width: 197px;
+    height: 21px;
+  
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.first_company{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.name_work{
+    color: #ff6b08;
+}
+.time_of_year{
+    color: #c1c1c1;
+    font-size: 12px;
+    font-weight: 400;
+}
+.slesh{
+    width: 1px;
+    color: #000000;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.ul_company{
+    padding-left: 15px;
+    width: 537px;
+   
+}
+.li_company{
+    color: #888888;
+    line-height: 25px;
+}
+.education{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    height: 12px;
+}
+.institute{
+    color: #ff6b08;
+    height:5px;
+}
+.specialty{
+    font-size: 14px;
+    font-weight: 700;
+    height: 3px;
+}
+.specialty_1{
+    font-size: 14px;
+    font-weight: 700;
+    height: 3px;
+    margin-bottom: 40px;
+}
