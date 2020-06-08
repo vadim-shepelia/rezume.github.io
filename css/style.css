@@ -17,8 +17,9 @@ body{
 }
 .foto{
     width: 370px;
-    height: 354px;
+    height: auto;
     padding-top: 40px;
+    padding-bottom: 10px;
    
 }
 .name_tel_mail{
@@ -42,7 +43,7 @@ body{
 }
 .div_contacts{
     color: #ffffff;
-    padding-top: 57px;
+    padding-top: 5px;
     padding-left: 40px;
     padding-right: 140px;
     padding-bottom: 20px;
