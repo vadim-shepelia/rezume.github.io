@@ -14,29 +14,68 @@ body{
     background: #1e2939;
     width: 370px;
     height: 1319px;
+
+}
+.name_job_one{
+   color: #1e2939;
+   font-size: 40px;
+   padding-top: 40px;
+   padding-bottom: 10px;
+   padding-left: 160px;
+   padding-right: 0px;
+   
+}
+.bacground_name{
+    background-color: #ffffff;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #2dd1d6;
+    margin: 2px;
+  }
+.circle_two {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    margin: 2px;
+  }
+.padding_img{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 10px;
 }
 .foto{
-    width: 370px;
-    height: auto;
-    padding-top: 40px;
-    padding-bottom: 10px;
-   
+    width: 350px;
+    border: 8px solid #1e2939;
+    
 }
 .name_tel_mail{
     color: white;
     width: 0 auto;
     height: 0 auto;
     margin-right: 10px;
-    font-weight:700 ;
+    margin-left: 25px;
+  
 }
 .ul_asidebar{
     margin:  0;
     padding: 0;
-    width: 300px;
+    width: 350px;
 }
 .all_content{
     padding-left: 90px;
-    padding-top: 54px;
+    padding-top: 105px;
     padding-right: 90px;
     width: 1200px;
 
@@ -46,20 +85,20 @@ body{
     padding-top: 5px;
     padding-left: 40px;
     padding-right: 140px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .contacts{
     color: #ffffff;
     font-family: Montserrat;
     font-size: 22px;
-    font-weight: 700;
+
     line-height: 24px;
 }
 .tel_mail{
     color: #2dd1d6;
     font-family: Montserrat;
     font-size: 14px;
-    font-weight: 400;
+
     line-height: 24px;
     
 }
@@ -67,7 +106,7 @@ body{
     padding-left: 8px;
 }
 .div_tech_skills{
-    padding-top: 54x;
+    padding-top: 40px;
     padding-left: 40px;
     padding-right: 209px;
     padding-bottom: 20px;
@@ -76,21 +115,32 @@ body{
     color: #ffffff;
     font-family: Montserrat;
     font-size: 22px;
-    font-weight: 700;
+    margin-top:10px ;
+    margin-bottom: 10px;
+    
 }
 .skills_text{
     color:#a7acb2;
     font-family: Montserrat;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
+    width: 300px;
+
 }
 .skills{
     color: #ff6b08;
     margin-left: 20px;
+    width: 330px;
+
+}
+.skills_lang{
+    color: #ff6b08;
+    margin-left: 20px;
+    width: 250px;
+
 }
 .div_soft_skills{
-    padding-top: 52x;
+    padding-top: 40x;
     padding-left: 41px;
     padding-right: 217px;
 }
@@ -98,19 +148,25 @@ body{
     color: #ffffff;
     font-family: Montserrat;
     font-size: 22px;
-    font-weight: 700;
+    margin-top:10px ;
+    margin-bottom: 10px;
 
 }
 .name_job{
     font-size: 14px;
-    font-weight: 700;
+   
 
 }
 .name{
     font-size: 45px;
     font-weight: 700;
+    color: #ffffff;
     font-family: Montserrat;
     margin-bottom: 20px;
+    margin-top: 37px;
+    margin-left: 370px;
+    position: absolute;
+    background-color:#1e2939;
 }
 .text_afte_name{
     font-size: 14px;
