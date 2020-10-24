@@ -24,6 +24,7 @@ body{
    padding-left: 160px;
    padding-right: 0px;
    
+   
 }
 .bacground_name{
     background-color: #ffffff;
@@ -38,8 +39,11 @@ body{
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: #2dd1d6;
     margin: 2px;
+    background: gold;
+    box-shadow: 0 -200px 100px -120px #017aeb inset;
+    animation: background 6s infinite alternate;
+    
   }
 .circle_two {
     width: 20px;
@@ -49,6 +53,14 @@ body{
     border-radius: 25px;
     background: rgb(255, 255, 255);
     margin: 2px;
+  }
+ 
+  
+  @keyframes background {
+    50% {
+      background: skyblue;
+      box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
   }
 .padding_img{
     padding-top: 30px;
@@ -154,6 +166,7 @@ body{
 }
 .name_job{
     font-size: 14px;
+    
    
 
 }
@@ -257,4 +270,9 @@ body{
     font-weight: 700;
     height: 3px;
     margin-bottom: 40px;
+}
+.photo_QA{
+    position: absolute;
+    height: 150px;
+    padding-left: 500px;
 }
