@@ -20,16 +20,18 @@ body{
    color: #1e2939;
    font-size: 40px;
    padding-top: 40px;
-   padding-bottom: 10px;
-   padding-left: 160px;
+   padding-bottom: 70px;
+   padding-left: 105px;
    padding-right: 0px;
+   width: 265px;
+  
    
    
 }
 .bacground_name{
     background-color: #ffffff;
     padding-right: 4px;
-    padding-top: 2px;
+    padding-top: 3px;
     padding-bottom: 2px;
 }
 
