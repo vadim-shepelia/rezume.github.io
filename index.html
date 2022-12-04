@@ -1,95 +1,158 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My rezume</title>
-    <link rel="icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="wrapper">
-        <!--sidebar-->
-        <aside class="sidebar">
-            <div class= 'name_job_one'><b class='bacground_name'> QA engineer</b></div>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./img/rezum.js" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+      }
 
-            <div class=padding_img>
-                <img src="./img/photo_work.jpg" alt="My photo" class="foto"> 
-            </div>
-            
-            <!--div_contacts-->
-            <div class="div_contacts">
-                <h3 class="contacts">Contacts</h3>
-                    <div>
-                        <span class="name_tel_mail">C:</span><a href="tel:380662243604" class="tel_mail"><span class="mail_tel">+38 066 224 36 04</span></a>
-                    </div>
-                    <div>   
-                        <span class="name_tel_mail">E:</span><a href="mailto: shepelia.vadim@gmail.com" class="tel_mail"><span class="mail_tel">shepelia.vadim@gmail.com</span></a>
-                    </div>
-                    <div>
-                        <span class="name_tel_mail">IN:</span><a href="https://www.linkedin.com/in/vadim-shepelia-3b3722197/" class="tel_mail">linkedin</a>
-                    </div>
-            </div> 
-            <!--div_Professional_skills-->  
-            <div class="div_tech_skills">
-                <h3 class="tech_skills">Professional skills </h3>
-                <ul class="ul_asidebar">
-                    <li class="skills"><span class="skills_text">Good knowledge of test theory</span></li>
-                    <li class="skills"><span class="skills_text">Good knowledge at theory of Agile: Scrum, Kanban</span> </li>
-                    <li class="skills"><span class="skills_text">Confident PC user</span> </li>
-                    <li class="skills"><span class="skills_text">Basic knowledge of SQL (create simple requests)</span> </li>
-                    <li class="skills" ><span class="skills_text">Understanding in API testing: Postman </span> </li>
-                    <li class="skills" ><span class="skills_text">Using Charles for testing client/server based application</span> </li>
-                    <li class="skills"><span class="skills_text">Bug tracking system: Jira, TestRail,Zoho</span> </li> 
-                    <li class="skills"><span class="skills_text">HTML</span> </li>
-                    <li class="skills"><span class="skills_text">CSS</span> </li>
-                   
-                </ul>
-            </div>
-            <!--div_soft_skills-->
-            <div class="div_soft_skills">
-                <h3 class="soft">Soft Skills</h3>
-                    <ul class="ul_asidebar">
-                        <li class="skills"><span class="skills_text">Scrum</span> </li>
-                        <li class="skills"><span class="skills_text">Agile</span> </li>
-                        <li class="skills"><span class="skills_text">Teamwork</span> </li>
-                    </ul>
-            </div>
-            <!--div_Languages-->
-            <div class="div_soft_skills">
-                <h3 class="soft">Languages</h3>
-                    <ul class="ul_asidebar">
-                        <li class="skills_lang">
-                            <span class="skills_text" >Russian, Ukraine</span>
-                                <div class="circle" style="float:right;"></div>
-                                <div class="circle" style="float:right;"></div> 
-                                <div class="circle" style="float:right;"></div> 
-                                <div class="circle" style="float:right;"></div> 
-                                <div class="circle" style="float:right;"></div> 
-                        </li>
-                        <li class="skills_lang"><span class="skills_text">English</span> 
-                            <div class="circle_two" style="float:right;"></div>
-                            <div class="circle_two" style="float:right;"></div> 
-                            <div class="circle_two" style="float:right;"></div> 
-                            <div class="circle" style="float:right;"></div> 
-                            <div class="circle" style="float:right;"></div> 
-                        
-                        </li>
-                        <li class="skills_lang"><span class="skills_text">Polish – basic</span> 
-                            <div class="circle_two" style="float:right;"></div>
-                            <div class="circle_two" style="float:right;"></div> 
-                            <div class="circle_two" style="float:right;"></div> 
-                            <div class="circle_two" style="float:right;"></div> 
-                            <div class="circle" style="float:right;"></div>                         
-                        </li>
-                    </ul>
-            </div>
-        </aside>
-        <!--project-->
-        <h1 class="name">Vadim Shepelia</h1>
-        <div class="all_content">
-            <!--<div>
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <div class="wrapper">
+      <!--sidebar-->
+      <aside class="sidebar">
+        <div class="name_job_one">
+          <b class="bacground_name"> QA engineer</b>
+        </div>
+
+        <div class="padding_img">
+          <img src="./img/photo_work.jpg" alt="My photo" class="foto" />
+        </div>
+
+        <!--div_contacts-->
+        <div class="div_contacts">
+          <h3 class="contacts">Contacts</h3>
+          <div>
+            <span class="name_tel_mail">C:</span
+            ><a href="tel:380662243604" class="tel_mail"
+              ><span class="mail_tel">+38 066 224 36 04</span></a
+            >
+          </div>
+          <div>
+            <span class="name_tel_mail">E:</span
+            ><a href="mailto: shepelia.vadim@gmail.com" class="tel_mail"
+              ><span class="mail_tel">shepelia.vadim@gmail.com</span></a
+            >
+          </div>
+          <div>
+            <span class="name_tel_mail">IN:</span
+            ><a
+              href="https://www.linkedin.com/in/vadim-shepelia-3b3722197/"
+              class="tel_mail"
+              >linkedin</a
+            >
+          </div>
+        </div>
+        <!--div_Professional_skills-->
+        <div class="div_tech_skills">
+          <h3 class="tech_skills">Professional skills</h3>
+          <ul class="ul_asidebar">
+            <li class="skills">
+              <span class="skills_text">Good knowledge of test theory</span>
+            </li>
+            <li class="skills">
+              <span class="skills_text"
+                >Good knowledge at theory of Agile: Scrum, Kanban</span
+              >
+            </li>
+            <li class="skills">
+              <span class="skills_text">Confident PC user</span>
+            </li>
+            <li class="skills">
+              <span class="skills_text"
+                >Basic knowledge of SQL (create simple requests)</span
+              >
+            </li>
+            <li class="skills">
+              <span class="skills_text">API testing: Postman </span>
+            </li>
+            <li class="skills">
+              <span class="skills_text"
+                >Using Charles for testing client/server based application</span
+              >
+            </li>
+            <li class="skills">
+              <span class="skills_text"
+                >Bug tracking system: Jira, TestRail,Zoho</span
+              >
+            </li>
+            <li class="skills"><span class="skills_text">HTML</span></li>
+            <li class="skills"><span class="skills_text">CSS</span></li>
+          </ul>
+        </div>
+        <!--div_soft_skills-->
+        <div class="div_soft_skills">
+          <h3 class="soft">Soft Skills</h3>
+          <ul class="ul_asidebar">
+            <li class="skills"><span class="skills_text">Scrum</span></li>
+            <li class="skills"><span class="skills_text">Agile</span></li>
+            <li class="skills"><span class="skills_text">Teamwork</span></li>
+          </ul>
+        </div>
+        <!--div_Languages-->
+        <div class="div_soft_skills">
+          <h3 class="soft">Languages</h3>
+          <ul class="ul_asidebar">
+            <li class="skills_lang">
+              <span class="skills_text">Russian, Ukraine</span>
+              <div class="circle" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+            </li>
+            <li class="skills_lang">
+              <span class="skills_text">English</span>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+            </li>
+            <li class="skills_lang">
+              <span class="skills_text">Polish – basic</span>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle_two" style="float: right"></div>
+              <div class="circle" style="float: right"></div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!--project-->
+      <h1 class="name">Vadim Shepelia</h1>
+      <div class="all_content">
+        <!--<div>
                 <h3 class="name_projects">Projects</h3>
                     <ol class="ol_projects">
                         <li class="li_all_content">
@@ -107,80 +170,155 @@
                     </ol>
             </div>-->
         <!--work experience-->
-            <h3 class="work">Work Experience</h3>
-            <!--company 1-->
-            <div>
-            <h4 class="first_company"> QA engineer at <span class="name_work"> Radar</span> </h4>
-                <span class="time_of_year">October 2019 - up to now <span class="slesh">|</span>Ukraine. Kiev.</span>
-                <ul class="ul_company">
-                    <li class="li_company">Manual testing (Mobile/Desktop web applications, Mobile native applications).</li>
-                    <li class="li_company">Writing test-documentation (test case, check list, user case).</li>
-                    <li class="li_company">Researching and analyze project features .</li>
-                    <li class="li_company">Analysis new requirements</li>
-                    <li class="li_company">Communication with teams</li>
-                </ul>             
-            </div>
-               <!--company 2-->
-            <div>
-            <h4 class="specialty">Operator <span class="name_work"> In-Time</span></h4>
-                <span  class="time_of_year">May 2019 - October 2019 <span class="slesh">|</span>Ukraine. Kiev. </span>
-                <ul class="ul_company">
-                    <li class="li_company">Work with a computer.</li>
-                    <li class="li_company">Placing orders and documents.</li>
-                </ul>          
-            </div>
-            <!--company 3-->
-            <div>
-                <h4 class="specialty">Logistic <span  class="name_work"> Autoridad OU</span></h4>
-                <span class="time_of_year">January 2018 - May 2019 <span class="slesh"> |</span>Estonia. Tallinn.</span>
-                <ul class="ul_company">
-                    <li  class="li_company">Communication with clients.</li>
-                    <li  class="li_company">Route planning.</li>
-                    <li  class="li_company">Company development.</li>
-                </ul>        
-            </div>
-            <!--company 4-->
-            <div>
-                <h4 class="specialty">Specialist of compiler <span  class="name_work"> TimGroup</span></h4>
-                <span class="time_of_year">October 2016- December 2017 <span class="slesh"> |</span>Poland. Poznan.</span>
-                <ul class="ul_company">
-                    <li  class="li_company">Teamwork.</li>
-                    <li  class="li_company">Picking and transportation.</li>
-                </ul>        
-            </div> 
-
-             <!--education_1-->
-            <h3 class="work">Educational</h3>
-            <div>
-                <h4  class="institute">OK SNAU</h4>
-                <h5 class="specialty_1">Construction and civil engineering "installation,maintenance of equipment and gas supply systems".</h5>
-                <span class="time_of_year">Training Period: 2009-2013 <span class="slesh">|</span>Ukraine. Akhtyrka.</span>
-            </div>
-            <!--education_2-->
-            <div>
-                <h4 class="institute"> Beketov Kharkov University</h4>
-                <h5 class="specialty">Heat and gas supply and ventilation</h5>
-                <h5 class="specialty">Degree: Bachelor</h5>
-                <span class="time_of_year">Training Period: 2013-2016 <span class="slesh">|</span>Ukraine. Kharkov.</span>
-            </div>
-           
-             <!--education_3-->
-            <div>
-                <h4 class="institute"> TTHK with a degree in Logistics Assistant.</h4>
-                <h5 class="specialty">Logistics Assistant</h5>
-                <span class="time_of_year">Training Period: 2018-2019. <span class="slesh">|</span>Tallinn. Estonia.</span>
-            </div>
-            <div>
-                <img src="./img/photo_QA.png" alt="My photo" class="photo_QA" > 
-            </div>
-            <!--education_QA-->
-            <div>
-                <h4 class="institute"> SKILL UP</h4>
-                <h5 class="specialty">Trainee QA engineer</h5>
-                <span class="time_of_year">Training Period: 2019-2019. <span class="slesh">|</span>Ukraine. Kiev.</span>
-            </div>
-          
+        <h3 class="work">Work Experience</h3>
+        <!--company 1-->
+        <div class="dropdown">
+          <h4 class="first_company dropbtn" onclick="myFunction()">
+            Middle QA Engineer at <span class="name_work_evo">EVO</span
+            ><span class="name_work">PLAY</span>
+          </h4>
+          <span class="time_of_year">
+            December 2021 - up to now <span class="slesh">|</span>Ukraine.
+            Kiev.</span
+          >
+          <ul class="ul_company dropdown-content" id="myDropdown">
+            <li class="li_company">Managing the QA documentation</li>
+            <li class="li_company">
+              Implementing testing best practices and processes in the project
+            </li>
+            <li class="li_company">Critical production issues handling</li>
+            <li class="li_company">Writing test cases/documenting errors</li>
+            <li class="li_company">
+              Functional, non-functional, regression and system testing
+            </li>
+            <li class="li_company">Releasing of the new software version</li>
+            <li class="li_company">
+              Work closely with the development team to improve existing
+              products
+            </li>
+            <li class="li_company">
+              Participating in a scrum environment (stand-ups, planning
+              sessions, etc.)
+            </li>
+          </ul>
         </div>
+        <br />
+        <div class="dropdown">
+          <h4
+            class="first_company dropbtn"
+            style="width: 180px"
+            onclick="myFunction2()"
+          >
+            QA engineer at <span class="name_work"> Radar</span>
+          </h4>
+          <span class="time_of_year"
+            >October 2019 - December 2021 <span class="slesh">|</span>Ukraine.
+            Kiev.</span
+          >
+          <ul class="ul_company dropdown-content" id="myDropdown2">
+            <li class="li_company">
+              Manual testing (Mobile/Desktop web applications, Mobile native
+              applications).
+            </li>
+            <li class="li_company">
+              Writing test-documentation (test case, check list, user case).
+            </li>
+            <li class="li_company">
+              Researching and analyze project features .
+            </li>
+            <li class="li_company">Analysis new requirements</li>
+            <li class="li_company">Communication with teams</li>
+          </ul>
+        </div>
+        <!--company 2-->
+        <div>
+          <h4 class="specialty">
+            Operator <span class="name_work"> In-Time</span>
+          </h4>
+          <span class="time_of_year"
+            >May 2019 - October 2019 <span class="slesh">|</span>Ukraine. Kiev.
+          </span>
+          <ul class="ul_company">
+            <li class="li_company">Work with a computer.</li>
+            <li class="li_company">Placing orders and documents.</li>
+          </ul>
+        </div>
+        <!--company 3-->
+        <div>
+          <h4 class="specialty">
+            Logistic <span class="name_work"> Autoridad OU</span>
+          </h4>
+          <span class="time_of_year"
+            >January 2018 - May 2019 <span class="slesh"> |</span>Estonia.
+            Tallinn.</span
+          >
+          <ul class="ul_company">
+            <li class="li_company">Communication with clients.</li>
+            <li class="li_company">Route planning.</li>
+            <li class="li_company">Company development.</li>
+          </ul>
+        </div>
+        <!--company 4-->
+        <div>
+          <h4 class="specialty">
+            Specialist of compiler <span class="name_work"> TimGroup</span>
+          </h4>
+          <span class="time_of_year"
+            >October 2016- December 2017 <span class="slesh"> |</span>Poland.
+            Poznan.</span
+          >
+          <ul class="ul_company">
+            <li class="li_company">Teamwork.</li>
+            <li class="li_company">Picking and transportation.</li>
+          </ul>
+        </div>
+
+        <!--education_1-->
+        <h3 class="work">Educational</h3>
+        <div>
+          <h4 class="institute">OK SNAU</h4>
+          <h5 class="specialty_1">
+            Construction and civil engineering "installation,maintenance of
+            equipment and gas supply systems".
+          </h5>
+          <span class="time_of_year"
+            >Training Period: 2009-2013 <span class="slesh">|</span>Ukraine.
+            Akhtyrka.</span
+          >
+        </div>
+        <!--education_2-->
+        <div>
+          <h4 class="institute">Beketov Kharkov University</h4>
+          <h5 class="specialty">Heat and gas supply and ventilation</h5>
+          <h5 class="specialty">Degree: Bachelor</h5>
+          <span class="time_of_year"
+            >Training Period: 2013-2016 <span class="slesh">|</span>Ukraine.
+            Kharkov.</span
+          >
+        </div>
+
+        <!--education_3-->
+        <div>
+          <h4 class="institute">TTHK with a degree in Logistics Assistant.</h4>
+          <h5 class="specialty">Logistics Assistant</h5>
+          <span class="time_of_year"
+            >Training Period: 2018-2019. <span class="slesh">|</span>Tallinn.
+            Estonia.</span
+          >
+        </div>
+        <div>
+          <img src="./img/photo_QA.png" alt="My photo" class="photo_QA" />
+        </div>
+        <!--education_QA-->
+        <div>
+          <h4 class="institute">SKILL UP</h4>
+          <h5 class="specialty">Trainee QA engineer</h5>
+          <span class="time_of_year"
+            >Training Period: 2019-2019. <span class="slesh">|</span>Ukraine.
+            Kiev.</span
+          >
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
