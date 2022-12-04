@@ -13,30 +13,7 @@
     />
   </head>
   <body>
-    <script>
-      /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      function myFunction2() {
-        document.getElementById("myDropdown2").classList.toggle("show");
-      }
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
+    <script src="js/rez.js"></script>
     <div class="wrapper">
       <!--sidebar-->
       <aside class="sidebar">
@@ -152,23 +129,7 @@ toggle between hiding and showing the dropdown content */
       <!--project-->
       <h1 class="name">Vadim Shepelia</h1>
       <div class="all_content">
-        <!--<div>
-                <h3 class="name_projects">Projects</h3>
-                    <ol class="ol_projects">
-                        <li class="li_all_content">
-                            <a class="a_projects" href="https://lovecamp.allinsol.com/">https://lovecamp.allinsol.com/.........................</a> 
-                            <span class="a_projects"><span class="li_all_content">[</span>HTML5, CSS3<span class="li_all_content">]</span></span>
-                        </li>
-                        <li class="li_all_content">
-                            <a class="a_projects" href="https://cryptohub.goit.ua/">https://cryptohub.goit.ua/...................................</a>
-                            <span class="a_projects"><span class="li_all_content">[</span>JavaScript<span class="li_all_content">]</span></span>
-                        </li>
-                        <li class="li_all_content">
-                           <a class="a_projects" href="https://kidslike.goit.co.ua/">https://kidslike.goit.co.ua/...................................</a>
-                            <span class="a_projects"><span class="li_all_content">[</span> React.js, Node.js<span class="li_all_content">]</span></span>
-                        </li>
-                    </ol>
-            </div>-->
+
         <!--work experience-->
         <h3 class="work">Work Experience</h3>
         <!--company 1-->
