@@ -13,7 +13,7 @@ body{
 .sidebar{
     background: #1e2939;
     width: 370px;
-    height: 1319px;
+    height: 1560px;
 
 }
 .name_job_one{
@@ -24,8 +24,8 @@ body{
    padding-left: 105px;
    padding-right: 0px;
    width: 265px;
-  
-   
+   text-align: right;
+
    
 }
 .bacground_name{
@@ -87,12 +87,12 @@ body{
     padding: 0;
     width: 350px;
 }
-.all_content{
+.all_content {
     padding-left: 90px;
     padding-top: 105px;
     padding-right: 90px;
-    width: 1200px;
-
+    width: 1560px;
+    position: relative; 
 }
 .div_contacts{
     color: #ffffff;
@@ -277,10 +277,12 @@ body{
     height: 3px;
     margin-bottom: 40px;
 }
-.photo_QA{
-    position: absolute;
-    height: 150px;
-    padding-left: 500px;
+.photo_QA {
+    position: absolute; 
+    bottom: 0;
+    right: 0; 
+    height: 150px; 
+    padding-left: 10px; 
 }
 
 

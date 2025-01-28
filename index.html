@@ -41,7 +41,7 @@ toggle between hiding and showing the dropdown content */
       <!--sidebar-->
       <aside class="sidebar">
         <div class="name_job_one">
-          <b class="bacground_name"> QA engineer</b>
+          <b class="bacground_name"> QA Lead </b>
         </div>
 
         <div class="padding_img">
@@ -123,7 +123,7 @@ toggle between hiding and showing the dropdown content */
           <h3 class="soft">Languages</h3>
           <ul class="ul_asidebar">
             <li class="skills_lang">
-              <span class="skills_text">Russian, Ukraine</span>
+              <span class="skills_text">Ukraine</span>
               <div class="circle" style="float: right"></div>
               <div class="circle" style="float: right"></div>
               <div class="circle" style="float: right"></div>
@@ -173,35 +173,127 @@ toggle between hiding and showing the dropdown content */
         <h3 class="work">Work Experience</h3>
         <!--company 1-->
         <div class="dropdown">
-          <h4 class="first_company dropbtn" onclick="myFunction()">
-            Middle QA Engineer at <span class="name_work_evo">EVO</span
-            ><span class="name_work">PLAY</span>
+          <h4 class="first_company dropbtn" onclick="toggleDropdown('dropdown1')">
+            QA Lead at <span class="name_work_evo">EVO</span><span class="name_work">PLAY</span>
           </h4>
           <span class="time_of_year">
-            December 2021 - up to now <span class="slesh">|</span>Ukraine.
-            Kiev.</span
-          >
-          <ul class="ul_company dropdown-content" id="myDropdown">
-            <li class="li_company">Managing the QA documentation</li>
-            <li class="li_company">
-              Implementing testing best practices and processes in the project
-            </li>
-            <li class="li_company">Critical production issues handling</li>
-            <li class="li_company">Writing test cases/documenting errors</li>
-            <li class="li_company">
-              Functional, non-functional, regression and system testing
-            </li>
-            <li class="li_company">Releasing of the new software version</li>
-            <li class="li_company">
-              Work closely with the development team to improve existing
-              products
-            </li>
-            <li class="li_company">
-              Participating in a scrum environment (stand-ups, planning
-              sessions, etc.)
-            </li>
+            December 2024 - up to now <span class="slesh">|</span> Ukraine, Kiev.
+          </span>
+          <ul class="ul_company dropdown-content" id="dropdown1">
+            <li class="li_company">*  Overseeing and managing QA documentation and test plans</li>
+            <li class="li_company">*  Implementing and enforcing best testing practices, methodologies, and processes across projects</li>
+            <li class="li_company">*  Handling critical production issues and ensuring timely resolution</li>
+            <li class="li_company">*  Leading the creation and review of test cases, documenting defects and ensuring traceability</li>
+            <li class="li_company">*  Managing and performing functional, non-functional, regression, and system testing</li>
+            <li class="li_company">*  Coordinating the release process and ensuring quality in new software versions</li>
+            <li class="li_company">*  Collaborating closely with development teams to identify improvements and optimize existing products</li>
+            <li class="li_company">*  Leading and participating in Agile practices (stand-ups, sprint planning, retrospectives, etc.)</li>
+            <li class="li_company">*  Mentoring and coaching junior QA engineers, ensuring skill development and adherence to standards</li>
+            <li class="li_company">*  Reporting on test progress, coverage, and quality metrics to stakeholders and management</li>
+          </ul>
+        
+          <h4 class="first_company dropbtn" onclick="toggleDropdown('dropdown2')">
+            Senior QA Engineer at <span class="name_work_evo">EVO</span><span class="name_work">PLAY</span>
+          </h4>
+          <span class="time_of_year">
+            November 2022 - December 2024 <span class="slesh">|</span> Ukraine, Kiev.
+          </span>
+          <ul class="ul_company dropdown-content" id="dropdown2">
+            <li class="li_company">*  Leading the creation and maintenance of QA documentation and test plans</li>
+            <li class="li_company">*  Applying and advocating for testing best practices, methodologies, and processes within the project</li>
+            <li class="li_company">*  Identifying, analyzing, and resolving critical production issues in a timely manner</li>
+            <li class="li_company">*  Writing and reviewing comprehensive test cases, documenting and tracking errors</li>
+            <li class="li_company">*  Performing functional, non-functional, regression, and system testing, ensuring high-quality releases</li>
+            <li class="li_company">*  Contributing to the release process, ensuring the quality of new software versions</li>
+            <li class="li_company">*  Collaborating closely with development teams to identify and implement product improvements</li>
+            <li class="li_company">*  Actively participating in Agile practices, including stand-ups, sprint planning, and retrospectives</li>
+            <li class="li_company">*  Continuously improving the testing process and tooling to optimize team efficiency</li>
+            <li class="li_company">*  Mentoring and supporting junior QA team members, providing guidance and feedback on testing techniques</li>
+          </ul>
+          
+        
+          <h4 class="first_company dropbtn" onclick="toggleDropdown('dropdown3')">
+            Middle QA Engineer at <span class="name_work_evo">EVO</span><span class="name_work">PLAY</span>
+          </h4>
+          <span class="time_of_year">
+            December 2021 - November 2022 <span class="slesh">|</span> Ukraine, Kiev.
+          </span>
+          <ul class="ul_company dropdown-content" id="dropdown3">
+            <li class="li_company">*  Managing the QA documentation</li>
+            <li class="li_company">*  Implementing testing best practices and processes in the project</li>
+            <li class="li_company">*  Critical production issues handling</li>
+            <li class="li_company">*  Writing test cases/documenting errors</li>
+            <li class="li_company">*  Functional, non-functional, regression and system testing</li>
+            <li class="li_company">*  Releasing of the new software version</li>
+            <li class="li_company">*  Work closely with the development team to improve existing products</li>
+            <li class="li_company">*  Participating in a scrum environment (stand-ups, planning sessions, etc.)</li>
           </ul>
         </div>
+        <script>
+          function toggleDropdown(id) {
+            // Закриваємо всі випадаючі списки
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+              if (dropdown.id !== id) {
+                dropdown.classList.remove('show');
+              }
+            });
+        
+            // Відкриваємо/закриваємо вибраний список
+            const selectedDropdown = document.getElementById(id);
+            selectedDropdown.classList.toggle('show');
+          }
+        </script>
+        
+        <style>
+          .dropdown-content {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          }
+        
+          .dropdown-content.show {
+            display: block;
+          }
+        
+          .dropbtn {
+            cursor: pointer;
+          }
+        
+          .li_company {
+            padding: 5px 0;
+          }
+        </style>
+        
+        <script>
+          function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+              dropdown.style.display = "none";
+            } else {
+              dropdown.style.display = "block";
+            }
+          }
+        </script>
+        
+        <style>
+          .dropdown-content {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          }
+        
+          .dropbtn {
+            cursor: pointer;
+          }
+        
+          .li_company {
+            padding: 5px 0;
+          }
+        </style>
+      
         <br />
         <div class="dropdown">
           <h4
